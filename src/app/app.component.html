@@ -1,0 +1,16 @@
+<style>
+    body{
+        font-size: 30px;
+    }
+</style>
+<div ng-app="app-root">
+    <p #describe [style.color]="fontColor">这里是 angular。</p>
+    <button  [disabled]="canClick" (click)="buttonClick()">按钮</button>
+    <br/>
+    <br/>
+    <button (click)="changeEditable()">change editable state.</button>
+    <p [contentEditable]="canEdit" ng-model="message">{{message}}</p>
+    <hr />
+    <hr />
+    <app-home></app-home>
+</div>
