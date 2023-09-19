@@ -1,7 +1,9 @@
-import { NgModule, isDevMode } from '@angular/core';
+import { NgModule, isDevMode, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +24,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
         BrowserAnimationsModule,
         MatSlideToggleModule,
         MatButtonModule,
+        MatDividerModule,
+        MatIconModule,
         ServiceWorkerModule.register('ngsw-worker.js', {
             enabled: !isDevMode(),
             // Register the ServiceWorker as soon as the application is stable
