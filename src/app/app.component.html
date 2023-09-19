@@ -1,16 +1,33 @@
 <style>
-    body{
+    body {
         font-size: 30px;
     }
 </style>
-<div ng-app="app-root">
-    <p #describe [style.color]="fontColor">这里是 angular。</p>
-    <button  [disabled]="canClick" (click)="buttonClick()">按钮</button>
-    <br/>
-    <br/>
-    <button (click)="changeEditable()">change editable state.</button>
-    <p [contentEditable]="canEdit" ng-model="message">{{message}}</p>
-    <hr />
-    <hr />
-    <app-home></app-home>
-</div>
+
+<p #describe [style.color]="fontColor">这里是 angular。</p>
+<button [disabled]="canClick" (click)="changeState()">只能按一次的按钮</button>
+<ul>
+    <li *ngFor="let item of students">
+        {{"学号：" + item.id + " 姓名： " + item.name}}
+    </li>
+</ul>
+<br />
+<br />
+<button (click)="changeEditable()">change editable state.</button>
+<p [contentEditable]="canEdit" ng-model="message">{{message}}</p>
+<hr />
+<hr />
+<button>按钮</button>
+<br />
+<br />
+<button mat-button color="black">按钮</button>
+<br />
+<br />
+<br />
+<mat-slide-toggle color="black">滑动我</mat-slide-toggle>
+<br />
+<br />
+<mat-slide-toggle>slide me!</mat-slide-toggle>
+<br />
+<br />
+<app-home></app-home>
