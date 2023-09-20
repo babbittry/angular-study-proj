@@ -21,7 +21,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent
+        HomeComponent,
     ],
     imports: [
         BrowserModule,

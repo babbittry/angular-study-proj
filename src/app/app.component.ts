@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component} from '@angular/core';
 import { ViewChild } from '@angular/core';
 
 @Component({
@@ -6,10 +6,10 @@ import { ViewChild } from '@angular/core';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
     title: string = 'my-first-proj';
-    ngAfterViewInit() {
-        console.log("view inited");
+    ngAfterViewInit():void {
+        console.log("view initialized");
     }
 
     students: { id: number, name: string }[] = [
@@ -23,12 +23,12 @@ export class AppComponent {
     message: string = "You can not edit me!";
     canEdit: boolean = false;
 
-    changeState() {
+    changeState():void {
         this.canClick = true;
         console.log("只能按一次奥");
     }
 
-    changeEditable() {
+    changeEditable():void {
         this.canEdit = !this.canEdit;
         if (this.canEdit) {
             this.message = "You can edit me!"
