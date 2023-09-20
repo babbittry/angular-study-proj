@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+    cityList:string[] = ['北京', '上海', '广州', '深圳'];
 }
