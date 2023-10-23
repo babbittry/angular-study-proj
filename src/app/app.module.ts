@@ -1,6 +1,7 @@
 import { NgModule, isDevMode, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
+import { CommonModule, registerLocaleData } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
@@ -18,6 +19,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { zh_CN } from 'ng-zorro-antd/i18n';
+import zh from '@angular/common/locales/zh';
+import { HttpClientModule } from '@angular/common/http';
+import { IconsProviderModule } from './icons-provider.module';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+
+registerLocaleData(zh);
 
 @NgModule({
     declarations: [
@@ -28,6 +38,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
         BrowserModule,
         AppRoutingModule,
         CommonModule,
+        RouterModule,
         BrowserAnimationsModule,
         MatSlideToggleModule,
         MatButtonModule,
@@ -45,9 +56,15 @@ import { ServiceWorkerModule } from '@angular/service-worker';
             // Register the ServiceWorker as soon as the application is stable
             // or after 30 seconds (whichever comes first).
             registrationStrategy: 'registerWhenStable:30000'
-        })
+        }),
+        HttpClientModule,
+        IconsProviderModule,
+        NzLayoutModule,
+        NzMenuModule,
     ],
-    providers: [],
+    providers: [
+    { provide: NZ_I18N, useValue: zh_CN }
+  ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

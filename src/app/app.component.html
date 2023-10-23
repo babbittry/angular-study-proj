@@ -1,52 +1,22 @@
-<style>
-    body {
-        font-size: 30px;
-    }
-</style>
-
-<mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
-
-<p #describe [style.color]="fontColor">这里是 angular。</p>
-<button [disabled]="canClick" (click)="changeState()">只能按一次的按钮</button>
-<ul>
-    <li *ngFor="let item of students">
-        {{"学号：" + item.id + " 姓名： " + item.name}}
-    </li>
-</ul>
-<br />
-<br />
-<button (click)="changeEditable()">change editable state.</button>
-<p [contentEditable]="canEdit" ng-model="message">{{message}}</p>
-<hr />
-<hr />
-<button>按钮</button>
-<br />
-<br />
-<button mat-raised-button color="black">按钮</button>
-<button mat-raised-button>Basic</button>
-<button mat-raised-button color="primary">Primary</button>
-<button mat-raised-button color="accent">Accent</button>
-<button mat-raised-button color="warn">Warn</button>
-<button mat-raised-button disabled>Disabled</button>
-<br />
-<br />
-<br />
-<mat-slide-toggle color="black">滑动我</mat-slide-toggle>
-<br />
-<br />
-<mat-slide-toggle>slide me!</mat-slide-toggle>
-<br />
-<br />
-<app-home></app-home>
+<nz-layout>
+    <nz-header>
+        <div class="logo"></div>
+        <ul nz-menu nzMode="horizontal" nzTheme="light">
+            <li nz-menu-item nzSelected>
+                <a routerLink="/">Home</a>
+            </li>
+            <li nz-menu-item>
+                <a routerLink="/about">About</a>
+            </li>
+            <li nz-menu-item>
+                <a routerLink="/app-home"  routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+            </li>
+        </ul>
+    </nz-header>
+    <nz-content>
+        <router-outlet></router-outlet>
+    </nz-content>
+    <nz-footer>
+        Footer
+    </nz-footer>
+</nz-layout>
