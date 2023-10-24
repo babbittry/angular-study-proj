@@ -1,7 +1,7 @@
 /* 基本布局 */
 
 :host {
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #header_wrap {
@@ -11,7 +11,6 @@
 nz-header,
 nz-footer {
     width: 100%;
-    background: #7dbcea;
     color: #fff;
     z-index: 100;
 }
@@ -22,6 +21,8 @@ nz-header {
 }
 
 nz-footer {
+    background: #7dbcea;
+    text-align: center;
     height: 100px;
     line-height: 1.5;
 }
@@ -43,6 +44,29 @@ nz-layout:last-child {
     margin: 0;
 }
 
+.logo {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.logo > a > img {
+    width: 56px;
+    vertical-align: middle;
+}
+
+.ant-menu-class {
+    display: inline-block;
+}
+
+.ant-menu-item > a {
+    /*margin: 20px 0 20px 0;*/
+}
+
+.ant-menu-item > a:hover {
+    /*font-size: larger;*/
+}
+
+/* heart beat animation */
 .with-love {
     color: red;
     display: inline-block;

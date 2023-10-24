@@ -1,6 +1,6 @@
 import { NgModule, isDevMode, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule, registerLocaleData } from '@angular/common';
+import {CommonModule, NgOptimizedImage, registerLocaleData} from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,7 +17,6 @@ import { MatSelectModule } from "@angular/material/select";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './components/home/home.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { zh_CN } from 'ng-zorro-antd/i18n';
@@ -27,12 +26,22 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 
+import { HomeComponent } from './components/home/home.component';
+import { ChatBoxComponent } from './components/chat-box/chat-box.component';
+import { IndexComponent } from './pages/index/index.component';
+import { AboutComponent } from './pages/about/about.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+
 registerLocaleData(zh);
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
+        ChatBoxComponent,
+        IndexComponent,
+        AboutComponent,
+        PageNotFoundComponent,
     ],
     imports: [
         BrowserModule,
@@ -61,6 +70,7 @@ registerLocaleData(zh);
         IconsProviderModule,
         NzLayoutModule,
         NzMenuModule,
+        NgOptimizedImage,
     ],
     providers: [
     { provide: NZ_I18N, useValue: zh_CN }
