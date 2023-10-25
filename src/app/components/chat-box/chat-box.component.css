@@ -1,0 +1,34 @@
+:host {
+    /*text-align: center;*/
+}
+
+p {
+    margin: 0;
+}
+
+:host ::ng-deep nz-card {
+    width: 500px !important;
+    height: 200px;
+}
+
+:host ::ng-deep .ant-card {
+    width: 500px;
+    /*height: 200px;*/
+}
+
+::ng-deep  nz-card > .ant-card-head{
+    background-color: rgba(16, 142, 233, 1);
+}
+
+/*.ant-card-head{*/
+/*    background-color: #ff0000;*/
+/*}*/
+
+/*.ant-card-head{*/
+/*    background: #ff0000;*/
+/*}*/
+
+/*nz-card > .ant-card-head > .ant-card-head-wrapper{*/
+/*    background-color: #ff0000;*/
+/*}*/
+

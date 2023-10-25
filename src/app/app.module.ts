@@ -25,12 +25,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzCardModule } from 'ng-zorro-antd/card';
 
 import { HomeComponent } from './components/home/home.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { BbcodeEditorComponent } from './components/bbcode-editor/bbcode-editor.component';
 
 registerLocaleData(zh);
 
@@ -42,6 +44,7 @@ registerLocaleData(zh);
         IndexComponent,
         AboutComponent,
         PageNotFoundComponent,
+        BbcodeEditorComponent,
     ],
     imports: [
         BrowserModule,
@@ -70,6 +73,7 @@ registerLocaleData(zh);
         IconsProviderModule,
         NzLayoutModule,
         NzMenuModule,
+        NzCardModule,
         NgOptimizedImage,
     ],
     providers: [
