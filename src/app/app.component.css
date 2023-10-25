@@ -1,11 +1,11 @@
 /* 基本布局 */
-
 :host {
     /*text-align: center;*/
 }
 
 #header_wrap {
     height: 64px;
+    width: 100%;
 }
 
 nz-header,
@@ -15,8 +15,13 @@ nz-footer {
     z-index: 100;
 }
 
+.ant-layout-header {
+    width: 100%;
+}
+
 nz-header {
     height: 64px;
+    padding: 0 10px 0 10px;
     position: fixed;
 }
 
@@ -46,7 +51,7 @@ nz-layout:last-child {
 
 .logo {
     display: inline-block;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 
 .logo > a > img {
