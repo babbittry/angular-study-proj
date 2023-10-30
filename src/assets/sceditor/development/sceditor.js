@@ -6250,7 +6250,9 @@
 		 * @private
 		 */
 		init = function () {
-			original._sceditor = base;
+			if(original._sceditor != null) {
+				original._sceditor = base;
+			}
 
 			// Load locale
 			if (options.locale && options.locale !== 'en') {
@@ -6781,6 +6783,7 @@
 				if (options.emoticonsEnabled) {
 					preLoadCache.push(createElement('img', {
 						src: root + (url.url || url)
+						// src: '../emoticons/' + (url.url || url) + '.png'
 					}));
 				}
 			});

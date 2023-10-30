@@ -35,7 +35,9 @@
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+                "src/assets/sceditor/bbcode-editor.js"
+            ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
           },
@@ -101,7 +103,9 @@
               "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+                "src/assets/sceditor/bbcode-editor.js"
+            ]
           }
         }
       }
