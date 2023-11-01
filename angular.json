@@ -36,7 +36,6 @@
               "src/styles.css"
             ],
             "scripts": [
-                "src/assets/sceditor/bbcode-editor.js"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"
@@ -104,7 +103,6 @@
               "src/styles.css"
             ],
             "scripts": [
-                "src/assets/sceditor/bbcode-editor.js"
             ]
           }
         }

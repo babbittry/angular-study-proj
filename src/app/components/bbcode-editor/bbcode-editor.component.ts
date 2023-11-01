@@ -8,11 +8,13 @@ declare var sceditor:any;
 })
 export class BbcodeEditorComponent implements OnInit, AfterViewInit{
     ngAfterViewInit() {
-        var textarea = document.getElementById('example');
+        var textarea = document.getElementById('bbcodeEditorArea');
         sceditor.create(textarea, {
             format: 'bbcode',
             icons: 'monocons',
-            style: 'minified/themes/content/default.min.css'
+            resizeWidth: false,
+            locale: 'cn',
+            style: 'assets/sceditor/development/themes/content/default.css'
         });
 
         // var themeInput = document.getElementById('theme');

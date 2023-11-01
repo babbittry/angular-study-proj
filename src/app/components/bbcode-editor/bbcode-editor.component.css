@@ -24,3 +24,15 @@ code:before, code {
     display: block;
     text-align: left;
 }
+
+#bbcodeEditorWrap {
+    width: 960px;
+    height: auto;
+    resize: none;
+}
+
+#bbcodeEditorArea {
+    width: 960px;
+    height: 800px;
+    resize: none;
+}
