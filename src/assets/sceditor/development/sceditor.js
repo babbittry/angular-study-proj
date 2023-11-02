@@ -1316,11 +1316,11 @@
 		 *
 		 * @type {string}
 		 */
-		toolbar: 'bold,italic,underline,strike,subscript,superscript|' +
-			'left,center,right,justify|font,size,color,removeformat|' +
+		toolbar: 'bold,italic,underline,strike|' +
+			'left,center,right|font,size,color,removeformat|' +
 			'cut,copy,pastetext|bulletlist,orderedlist,indent,outdent|' +
-			'table|code,quote|horizontalrule,image,email,link,unlink|' +
-			'emoticon,youtube,date,time|ltr,rtl|print,maximize,source',
+			'table|code,quote|horizontalrule,image,link,unlink|' +
+			'emoticon,date,time|ltr,rtl|print,maximize,source',
 
 		/**
 		 * Comma separated list of commands to excludes from the toolbar

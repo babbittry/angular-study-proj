@@ -16,7 +16,7 @@
 		'Center': '置中',
 		'Align right': '靠右对齐',
 		'Justify': '两端对齐',
-		'Font Name': '字体',
+		'Font Name': '字体(仅英文字体)',
 		'Font Size': '字号',
 		'Font Color': '字色',
 		'Remove Formatting': '格式清除',
@@ -62,6 +62,7 @@
 		'Enter the YouTube video URL or ID:': '输入YouTube地址或编号',
 		'Insert a Quote': '插入引用',
 		'Invalid YouTube video': '无效的YouTube视频',
+		'Maximize': '最大化',
 
 		dateFormat: 'year-month-day'
 	};

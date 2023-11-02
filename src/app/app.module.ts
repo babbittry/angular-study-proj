@@ -27,6 +27,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzBackTopModule } from 'ng-zorro-antd/back-top';
+import { NzButtonModule } from 'ng-zorro-antd/button';
 
 import { HomeComponent } from './components/home/home.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
@@ -77,6 +78,7 @@ registerLocaleData(zh);
         NzCardModule,
         NgOptimizedImage,
         NzBackTopModule,
+        NzButtonModule,
     ],
     providers: [
     { provide: NZ_I18N, useValue: zh_CN }
