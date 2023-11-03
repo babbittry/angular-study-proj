@@ -6250,7 +6250,7 @@
 		 * @private
 		 */
 		init = function () {
-			if(original._sceditor != null) {
+			if(original._sceditor == null) {
 				original._sceditor = base;
 			}
 
