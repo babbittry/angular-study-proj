@@ -36,3 +36,7 @@ code:before, code {
     height: 800px;
     resize: none;
 }
+
+#generatedHtmlWrap img {
+    max-width: 800px;
+}

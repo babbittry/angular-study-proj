@@ -44,13 +44,13 @@ export class BbcodeEditorComponent implements OnInit, AfterViewInit {
         var bbcodeEditorTextarea:HTMLElement|null = document.getElementById('bbcodeEditorArea');
         console.log('genBBCode clicked.');
         if(sceditor.instance(bbcodeEditorTextarea) != null){
-            let generatedHtmlTextarea:HTMLElement|null = document.getElementById('generatedHtml');
+            let generatedHtmlWrapDiv:HTMLElement|null = document.getElementById('generatedHtmlWrap');
             let value:string = '';
             console.log('genBBCode inner clicked.');
             value = sceditor.instance(bbcodeEditorTextarea).getWysiwygEditorValue(false);
             console.log(value);
-            if(generatedHtmlTextarea != null){
-                generatedHtmlTextarea.innerHTML = value;
+            if(generatedHtmlWrapDiv != null){
+                generatedHtmlWrapDiv.innerHTML = value;
             }
             sceditor.instance(bbcodeEditorTextarea).destroy();
         }
