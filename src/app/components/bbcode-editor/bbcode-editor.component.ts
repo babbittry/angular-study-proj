@@ -13,8 +13,8 @@ export class BbcodeEditorComponent implements OnInit, AfterViewInit {
         sceditor.create(bbcodeEditorTextarea, {
             format: 'bbcode',
             icons: 'monocons',
-            resizeWidth: false,
             locale: 'cn',
+            resizeWidth: false,
             style: 'assets/sceditor/minified/themes/content/default.min.css'
         });
     }

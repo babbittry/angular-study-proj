@@ -1,6 +1,6 @@
 import { NgModule, isDevMode, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {CommonModule, NgOptimizedImage, registerLocaleData} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,9 +18,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { zh_CN } from 'ng-zorro-antd/i18n';
-import zh from '@angular/common/locales/zh';
 import { HttpClientModule } from '@angular/common/http';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
@@ -28,6 +25,8 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzListModule } from 'ng-zorro-antd/list';
 
 import { HomeComponent } from './components/home/home.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
@@ -36,7 +35,18 @@ import { AboutComponent } from './pages/about/about.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BbcodeEditorComponent } from './components/bbcode-editor/bbcode-editor.component';
 
+/** i18n **/
+import { NZ_I18N } from 'ng-zorro-antd/i18n';
+import { zh_CN } from 'ng-zorro-antd/i18n';
+// import { en_us } from 'ng-zorro-antd/i18n';
+import { registerLocaleData } from '@angular/common';
+import zh from '@angular/common/locales/zh';
+import en from '@angular/common/locales/en';
+registerLocaleData(en);
 registerLocaleData(zh);
+
+/** 配置 ng-zorro-antd 国际化 **/
+import { provideNzI18n, en_US } from 'ng-zorro-antd/i18n';
 
 @NgModule({
     declarations: [
@@ -79,6 +89,8 @@ registerLocaleData(zh);
         NgOptimizedImage,
         NzBackTopModule,
         NzButtonModule,
+        NzGridModule,
+        NzListModule,
     ],
     providers: [
     { provide: NZ_I18N, useValue: zh_CN }
