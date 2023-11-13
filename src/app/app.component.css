@@ -3,7 +3,21 @@
     /*text-align: center;*/
 }
 
-#header_wrap {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header_wrap {
     height: 64px;
     width: 100%;
 }
@@ -38,6 +52,7 @@ nz-header {
 nz-footer {
     background: #7dbcea;
     height: 500px;
+    border: 5px solid black;
 }
 
 nz-content {
@@ -48,6 +63,8 @@ nz-content {
     min-width: 1000px;
     min-height: 3000px;
     line-height: 120px;
+    margin: auto;
+    border: 5px solid black;
 }
 
 nz-layout {
@@ -105,6 +122,18 @@ nz-layout:last-child {
 ul li {
     list-style: none;
     text-align: center;
+}
+
+.lang-list {
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 36px;
+    margin-left: 10px;
+    line-height: 2;
+}
+
+.lang-list img {
+    width: 36px;
 }
 
 /* heart beat animation */

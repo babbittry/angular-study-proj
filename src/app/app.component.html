@@ -1,9 +1,9 @@
 <nz-layout>
-    <div id="header_wrap">
+    <div class="header_wrap">
         <nz-header>
             <div class="logo">
                 <a routerLink="/">
-                    <img src="assets/icons/icon-512x512.png" alt="logo"/>
+                    <img src="assets/icons/icon-512x512.png" alt="logo" />
                 </a>
             </div>
             <div class="ant-menu-class">
@@ -56,39 +56,44 @@
         <div nz-row nzGutter="{ xs: 8, sm: 16, md: 24, lg: 32 }">
             <div nz-col nzSpan="12">
                 <div nz-row nzGutter="{ xs: 8, sm: 16, md: 24, lg: 32 }">
-                        <div  nz-col nzSpan="12" class="info-item">
-                            总人数：
-                            <span class="item-data">123456</span>
-                        </div>
-                        <div  nz-col nzSpan="12" class="info-item">
-                            封禁人数：
-                            <span class="item-data">123456</span>
-                        </div>
-                        <div  nz-col nzSpan="12" class="info-item">
-                            总上传：
-                            <span class="item-data">123456</span>
-                        </div>
-                        <div  nz-col nzSpan="12" class="info-item">
-                            总下载：
-                            <span class="item-data">123456</span>
-                        </div>
+                    <div nz-col nzSpan="12" class="info-item">
+                        总人数：
+                        <span class="item-data">123456</span>
+                    </div>
+                    <div nz-col nzSpan="12" class="info-item">
+                        封禁人数：
+                        <span class="item-data">123456</span>
+                    </div>
+                    <div nz-col nzSpan="12" class="info-item">
+                        总上传：
+                        <span class="item-data">123456</span>
+                    </div>
+                    <div nz-col nzSpan="12" class="info-item">
+                        总下载：
+                        <span class="item-data">123456</span>
+                    </div>
                 </div>
             </div>
             <div nz-col nzSpan="12">
                 <ul class="list-unstyled">
                     <li>
-                            <span class="lang-list lang-footer">
-                            1
-                            </span>
                         <span class="lang-list lang-footer">
-                            2
-                            </span>
+                            <img src="assets/flags/cn.svg" alt="China flag">
+                        </span>
                         <span class="lang-list lang-footer">
-                            3
-                            </span>
+                            <img src="assets/flags/gb.svg" alt="England flag">
+                        </span>
+                        <span class="lang-list lang-list-tw">
+                            <a></a>
+                            <img src="assets/flags/tw.svg" alt="Taiwan flag">
+                        </span>
+                        <span class="lang-list lang-footer">
+                            <img src="assets/flags/jp.svg" alt="Japan flag">
+                        </span>
                     </li>
-                    <li translate="GIT_REPO">Power by <a href="https://github.com/taobataoma/meanTorrent" target="_blank">&copy;meanTorrent</a></li>
-                    <li translate="MIT_PROTOCOL">本项目源码受 <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a> 开源协议保护</li>
+                    <li translate="GIT_REPO">Power by <a href="https://github.com/taobataoma/meanTorrent" target="_blank">&copy; meanTorrent</a></li>
+                    <li translate="MIT_PROTOCOL">本项目源码受 <a href="https://mit-license.org/" target="_blank">MIT</a> 开源协议保护
+                    </li>
                 </ul>
                 <div class="icon-list">
                     <i class="icon ion-social-github"></i>
@@ -110,4 +115,4 @@
         </div>
     </nz-footer>
 </nz-layout>
-<nz-back-top [nzVisibilityHeight]="100" />    <!-- back to top -->
+<nz-back-top [nzVisibilityHeight]="100" /> <!-- back to top -->
