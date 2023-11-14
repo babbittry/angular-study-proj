@@ -30,6 +30,7 @@ import { NzBackTopModule } from 'ng-zorro-antd/back-top';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzListModule } from 'ng-zorro-antd/list';
+import { NzRateModule } from 'ng-zorro-antd/rate';
 
 /* components and pages */
 import { HomeComponent } from './components/home/home.component';
@@ -49,6 +50,7 @@ registerLocaleData(zh);
 
 /** 配置 ng-zorro-antd 国际化 **/
 import { provideNzI18n, en_US, NZ_I18N, zh_CN, NzI18nService  } from 'ng-zorro-antd/i18n';
+import { NewMovieListngComponent } from './components/new-movie-listng/new-movie-listng.component';
 
 @NgModule({
     declarations: [
@@ -59,6 +61,7 @@ import { provideNzI18n, en_US, NZ_I18N, zh_CN, NzI18nService  } from 'ng-zorro-a
         AboutComponent,
         PageNotFoundComponent,
         BbcodeEditorComponent,
+        NewMovieListngComponent,
     ],
     imports: [
         BrowserModule,
@@ -93,6 +96,7 @@ import { provideNzI18n, en_US, NZ_I18N, zh_CN, NzI18nService  } from 'ng-zorro-a
         NzButtonModule,
         NzGridModule,
         NzListModule,
+        NzRateModule,
     ],
     providers: [{
         provide: NZ_I18N,

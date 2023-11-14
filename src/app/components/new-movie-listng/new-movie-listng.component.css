@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.movie-wrapper {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #3c3c3c;
+    width: 266px;
+    height: 416px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.moviePoster img{
+    width: 256px;
+}
+
+.movie-wrapper .movie-title {
+    position: absolute;
+    bottom: 5px;
+    line-height: 1;
+    font-size: 18px;
+    color: #363636;
+}
+
+.torrent-user-info {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    padding: 0 5px;
+    line-height: 2;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.torrent-tmdb-info {
+    position: absolute;
+    bottom: 27px;
+    left: 5px;
+    right: 5px;
+    line-height: 2;
+    padding: 0 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
