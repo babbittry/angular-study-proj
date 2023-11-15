@@ -57,13 +57,11 @@ nz-footer {
 
 nz-content {
     background: rgba(16, 142, 233, 1);
-    color: #fff;
     height: auto;
     max-width: 1600px;
     min-width: 1000px;
     min-height: 3000px;
-    line-height: 120px;
-    margin: auto;
+    margin: 0 auto;
     border: 5px solid black;
 }
 

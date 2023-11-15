@@ -26,9 +26,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## 所有的 z-index
+
+nz-header, nz-footer: z-index: 50
+
+ant-back-top: z-index: 100
+
+.torrent-imdb-info: z-index: 2
+
 ## Thanks / 鸣谢 / ありがとう
 
 [SCEditor](https://github.com/samclarke/SCEditor)
+
 [Angular](https://angular.io/)
+
 [NG-ZORRO](https://ng-zorro.gitee.io/)
+
+[TMDB](http://tmdb.org/)
+
+[fontawesome](https://fontawesome.com/)
 
