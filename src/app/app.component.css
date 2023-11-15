@@ -9,10 +9,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -26,10 +22,6 @@ nz-header,
 nz-footer {
     width: 100%;
     z-index: 50;
-}
-
-.ant-layout-header {
-    width: 100%;
 }
 
 :host ::ng-deep .ant-back-top {
@@ -52,17 +44,15 @@ nz-header {
 nz-footer {
     background: #7dbcea;
     height: 500px;
-    border: 5px solid black;
 }
 
 nz-content {
     background: rgba(16, 142, 233, 1);
-    height: auto;
-    max-width: 1600px;
+    width: 100%;
     min-width: 1000px;
+    max-width: 1600px;
     min-height: 3000px;
     margin: 0 auto;
-    border: 5px solid black;
 }
 
 nz-layout {
