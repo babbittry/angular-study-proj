@@ -1,21 +1,6 @@
-/* 基本布局 */
-:host {
-    /*text-align: center;*/
-}
-
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.header_wrap {
-    height: 64px;
-    width: 100%;
 }
 
 nz-header,
@@ -25,9 +10,7 @@ nz-footer {
 }
 
 :host ::ng-deep .ant-back-top {
-    bottom: 100px;
     z-index: 100;
-    /*background-color: #ff8d05;*/
 }
 
 :host ::ng-deep .ant-back-top .ant-back-top-content {
@@ -37,7 +20,7 @@ nz-footer {
 nz-header {
     height: 64px;
     background: #7dbcea;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     position: fixed;
 }
 
@@ -107,7 +90,14 @@ nz-layout:last-child {
     margin-top: 20px;
 }
 
-ul li {
+nz-footer .footer-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+nz-footer .footer-wrapper ul li {
     list-style: none;
     text-align: center;
 }

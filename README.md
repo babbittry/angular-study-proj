@@ -46,3 +46,5 @@ ant-back-top: z-index: 100
 
 [fontawesome](https://fontawesome.com/)
 
+[transloco](https://github.com/ngneat/transloco)
+

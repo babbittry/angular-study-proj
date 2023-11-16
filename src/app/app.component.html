@@ -1,6 +1,5 @@
 <nz-layout>
-    <div class="header_wrap">
-        <nz-header>
+    <nz-header>
             <div class="logo">
                 <a routerLink="/">
                     <img src="assets/icons/icon-512x512.png" alt="logo" />
@@ -48,71 +47,72 @@
                 </ul>
             </div>
         </nz-header>
-    </div>
     <nz-content>
         <router-outlet></router-outlet>
     </nz-content>
     <nz-footer>
-        <div nz-row nzGutter="{ xs: 8, sm: 16, md: 24, lg: 32 }">
-            <div nz-col nzSpan="12">
-                <div nz-row nzGutter="{ xs: 8, sm: 16, md: 24, lg: 32 }">
-                    <div nz-col nzSpan="12" class="info-item">
-                        <span>总人数：</span>
-                        <span class="item-data">123456</span>
-                    </div>
-                    <div nz-col nzSpan="12" class="info-item">
-                        <span>封禁人数：</span>
-                        <span class="item-data">123456</span>
-                    </div>
-                    <div nz-col nzSpan="12" class="info-item">
-                        <span>总上传：</span>
-                        <span class="item-data">123456</span>
-                    </div>
-                    <div nz-col nzSpan="12" class="info-item">
-                        <span>总下载：</span>
-                        <span class="item-data">123456</span>
+        <div class="footer-wrapper">
+            <div nz-row nzGutter="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+                <div nz-col nzSpan="12">
+                    <div nz-row nzGutter="{ xs: 8, sm: 16, md: 24, lg: 32 }">
+                        <div nz-col nzSpan="12" class="info-item">
+                            <span>总人数：</span>
+                            <span class="item-data">123456</span>
+                        </div>
+                        <div nz-col nzSpan="12" class="info-item">
+                            <span>封禁人数：</span>
+                            <span class="item-data">123456</span>
+                        </div>
+                        <div nz-col nzSpan="12" class="info-item">
+                            <span>总上传：</span>
+                            <span class="item-data">123456</span>
+                        </div>
+                        <div nz-col nzSpan="12" class="info-item">
+                            <span>总下载：</span>
+                            <span class="item-data">123456</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div nz-col nzSpan="12">
-                <ul class="list-unstyled">
-                    <li>
+                <div nz-col nzSpan="12">
+                    <ul class="list-unstyled">
+                        <li>
                         <span class="lang-list lang-footer">
                             <img src="assets/flags/cn.svg" alt="China flag">
                         </span>
-                        <span class="lang-list lang-footer">
+                            <span class="lang-list lang-footer">
                             <img src="assets/flags/gb.svg" alt="England flag">
                         </span>
-                        <span class="lang-list lang-list-tw">
+                            <span class="lang-list lang-list-tw">
                             <a></a>
                             <img src="assets/flags/tw.svg" alt="Taiwan flag">
                         </span>
-                        <span class="lang-list lang-footer">
+                            <span class="lang-list lang-footer">
                             <img src="assets/flags/jp.svg" alt="Japan flag">
                         </span>
-                    </li>
-                    <li translate="GIT_REPO">Power by <a href="https://github.com/taobataoma/meanTorrent" target="_blank">&copy; meanTorrent</a></li>
-                    <li translate="MIT_PROTOCOL">本项目源码受 <a href="https://mit-license.org/" target="_blank">MIT</a> 开源协议保护
-                    </li>
-                </ul>
-                <div class="icon-list">
-                    <i class="icon ion-social-github"></i>
-                    <i class="icon ion-social-nodejs"></i>
-                    <i class="icon ion-social-html5-outline"></i>
-                    <i class="icon ion-social-css3-outline"></i>
+                        </li>
+                        <li translate="GIT_REPO">Power by <a href="https://github.com/taobataoma/meanTorrent" target="_blank">&copy; meanTorrent</a></li>
+                        <li translate="MIT_PROTOCOL">本项目源码受 <a href="https://mit-license.org/" target="_blank">MIT</a> 开源协议保护
+                        </li>
+                    </ul>
+                    <div class="icon-list">
+                        <i class="icon ion-social-github"></i>
+                        <i class="icon ion-social-nodejs"></i>
+                        <i class="icon ion-social-html5-outline"></i>
+                        <i class="icon ion-social-css3-outline"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="copyright">
-            <p>
-                © sakura pt
-                <span class="with-love">
+            <div class="copyright">
+                <p>
+                    © sakura pt
+                    <span class="with-love">
                     <i class="fa fa-heart" style="color: red"></i>
 
                 </span>
-                2023
-            </p>
-            <p>由 XXX 强力驱动</p>
+                    2023
+                </p>
+                <p>由 XXX 强力驱动</p>
+            </div>
         </div>
     </nz-footer>
 </nz-layout>
