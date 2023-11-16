@@ -8,13 +8,13 @@
             <div class="ant-menu-class">
                 <ul nz-menu nzMode="horizontal" nzTheme="light">
                     <li nz-menu-item nzSelected>
-                        <a routerLink="/">Home</a>
+                        <a routerLink="/">{{ 'HOME' | transloco }}</a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="/about">About</a>
+                        <a routerLink="/about">{{ 'ABOUT' | transloco }}</a>
                     </li>
                     <li nz-menu-item>
-                        <a routerLink="/app-home" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+                        <a routerLink="/app-home" routerLinkActive="active" ariaCurrentWhenActive="page">{{ 'CONTACT' | transloco }}</a>
                     </li>
                     <li nz-submenu nzPlacement="bottomLeft" nzTitle="Navigation Three - Submenu" nzIcon="setting">
                         <ul>
@@ -76,19 +76,18 @@
                 <div nz-col nzSpan="12">
                     <ul class="list-unstyled">
                         <li>
-                        <span class="lang-list lang-footer">
-                            <img src="assets/flags/cn.svg" alt="China flag">
-                        </span>
-                            <span class="lang-list lang-footer">
-                            <img src="assets/flags/gb.svg" alt="England flag">
-                        </span>
-                            <span class="lang-list lang-list-tw">
-                            <a></a>
-                            <img src="assets/flags/tw.svg" alt="Taiwan flag">
-                        </span>
-                            <span class="lang-list lang-footer">
-                            <img src="assets/flags/jp.svg" alt="Japan flag">
-                        </span>
+                            <button (click)="changeLang('cn')" class="lang-list">
+                                <img src="assets/flags/cn.svg" alt="China flag">
+                            </button>
+                            <button (click)="changeLang('en')" class="lang-list">
+                                <img src="assets/flags/gb.svg" alt="England flag">
+                            </button>
+                            <button (click)="changeLang('tw')" class="lang-list">
+                                <img src="assets/flags/tw.svg" alt="Taiwan flag">
+                            </button>
+                            <button (click)="changeLang('jp')" class="lang-list">
+                                <img src="assets/flags/jp.svg" alt="Japan flag">
+                            </button>
                         </li>
                         <li translate="GIT_REPO">Power by <a href="https://github.com/taobataoma/meanTorrent" target="_blank">&copy; meanTorrent</a></li>
                         <li translate="MIT_PROTOCOL">本项目源码受 <a href="https://mit-license.org/" target="_blank">MIT</a> 开源协议保护

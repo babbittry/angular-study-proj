@@ -104,10 +104,8 @@ nz-footer .footer-wrapper ul li {
 
 .lang-list {
     margin-top: 5px;
-    padding-left: 5px;
-    font-size: 36px;
     margin-left: 10px;
-    line-height: 2;
+    border: none;
 }
 
 .lang-list img {

@@ -1,7 +1,7 @@
-import { NgModule, isDevMode, Component } from '@angular/core';
+import { NgModule, isDevMode, Component, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { RouterModule, provideRouter } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { IconsProviderModule } from './icons-provider.module';
 import { AppComponent } from './app.component';
@@ -39,18 +39,15 @@ import { IndexComponent } from './pages/index/index.component';
 import { AboutComponent } from './pages/about/about.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BbcodeEditorComponent } from './components/bbcode-editor/bbcode-editor.component';
+import { NewMovieListngComponent } from './components/new-movie-listng/new-movie-listng.component';
 
 /** i18n **/
-import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import en from '@angular/common/locales/en';
+import { TranslocoRootModule } from './transloco-root.module';
 registerLocaleData(en);
 registerLocaleData(zh);
-
-/** 配置 ng-zorro-antd 国际化 **/
-import { provideNzI18n, en_US, NZ_I18N, zh_CN, NzI18nService  } from 'ng-zorro-antd/i18n';
-import { NewMovieListngComponent } from './components/new-movie-listng/new-movie-listng.component';
 
 @NgModule({
     declarations: [
@@ -97,22 +94,10 @@ import { NewMovieListngComponent } from './components/new-movie-listng/new-movie
         NzGridModule,
         NzListModule,
         NzRateModule,
+        TranslocoRootModule,
     ],
-    providers: [{
-        provide: NZ_I18N,
-        useFactory: (localId: string) => {
-            switch (localId) {
-                case 'en':
-                    return en_US;
-                /** 与 angular.json i18n/locales 配置一致 **/
-                case 'zh':
-                    return zh_CN;
-                default:
-                    return en_US;
-            }
-        },
-        deps: [LOCALE_ID]
-    }],
+    providers: [
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
