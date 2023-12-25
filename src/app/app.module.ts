@@ -20,7 +20,6 @@ import { NzListModule } from 'ng-zorro-antd/list';
 import { NzRateModule } from 'ng-zorro-antd/rate';
 
 /* components and pages */
-import { HomeComponent } from './components/home/home.component';
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import { IndexComponent } from './pages/index/index.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -39,7 +38,6 @@ registerLocaleData(zh);
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent,
         ChatBoxComponent,
         IndexComponent,
         AboutComponent,
