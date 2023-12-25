@@ -9,19 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
 
-/* material design */
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatIconModule } from '@angular/material/icon';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatSelectModule } from "@angular/material/select";
-
 /* ng zorro */
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
@@ -66,17 +53,6 @@ registerLocaleData(zh);
         CommonModule,
         RouterModule,
         BrowserAnimationsModule,
-        MatSlideToggleModule,
-        MatButtonModule,
-        MatDividerModule,
-        MatIconModule,
-        MatToolbarModule,
-        MatCardModule,
-        MatFormFieldModule,
-        FormsModule,
-        MatInputModule,
-        MatRadioModule,
-        MatSelectModule,
         ServiceWorkerModule.register('ngsw-worker.js', {
             enabled: !isDevMode(),
             // Register the ServiceWorker as soon as the application is stable
