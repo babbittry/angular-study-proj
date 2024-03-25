@@ -3,5 +3,10 @@
     "HOME": "表紙",
     "ABOUT": "について",
     "CONTACT": "お問い合わせ",
-    "CHAT_BOX_CONTENT": "chat box jp"
+    "CHAT_BOX_CONTENT": "chat box jp",
+    "TOTAL_USERS": "总人数：",
+    "BANNED_USERS": "封禁人数：",
+    "TOTAL_UPLOAD": "总上传：",
+    "TOTAL_DOWNLOAD": "总下载：",
+    "POWERED_BY": "Powered By <a href='https://angular.io/' target='_blank'>Angular</a> & <a href='https://dotnet.microsoft.com/' target='_blank'>.Net</a>"
 }

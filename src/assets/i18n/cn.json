@@ -2,5 +2,10 @@
     "HOME": "首页",
     "ABOUT": "关于",
     "CONTACT": "联系我们",
-    "CHAT_BOX_CONTENT": "对话框"
+    "CHAT_BOX_CONTENT": "对话框",
+    "TOTAL_USERS": "总人数：",
+    "BANNED_USERS": "封禁人数：",
+    "TOTAL_UPLOAD": "总上传：",
+    "TOTAL_DOWNLOAD": "总下载：",
+    "POWERED_BY": "由 <a href='https://angular.io/' target='_blank'>Angular</a> & <a href='https://dotnet.microsoft.com/' target='_blank'>.Net</a> 强力驱动"
 }
