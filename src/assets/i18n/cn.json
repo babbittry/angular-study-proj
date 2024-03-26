@@ -8,5 +8,18 @@
     "TOTAL_UPLOAD": "总上传：",
     "TOTAL_DOWNLOAD": "总下载：",
     "POWERED_BY": "由 <a href='https://angular.io/' target='_blank'>Angular</a> & <a href='https://dotnet.microsoft.com/' target='_blank'>.Net</a> 强力驱动",
-    "MIT_PROTOCOL": "本项目源码受 <a href='https://mit-license.org/' target='_blank'>MIT</a> 开源协议保护"
+    "MIT_PROTOCOL": "本项目源码受 <a href='https://mit-license.org/' target='_blank'>MIT</a> 开源协议保护",
+    "TORRENTS": "种子",
+    "ALL_TORRENTS": "所有种子",
+    "MOVIE": "电影",
+    "TV_SERIAL": "电视剧",
+    "DOCUMENTARY": "纪录片",
+    "SPORTS": "体育",
+    "VARIETY": "综艺",
+    "MUSIC": "音乐",
+    "E-BOOK": "电子书",
+    "FORUMS": "论坛",
+    "UPLOAD": "上传",
+    "REQUESTS": "求种",
+    "OFFERS": "候选"
 }

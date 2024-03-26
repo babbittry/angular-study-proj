@@ -8,5 +8,18 @@
     "TOTAL_UPLOAD": "縂上傳：",
     "TOTAL_DOWNLOAD": "縂下載：",
     "POWERED_BY": "Powered By <a href='https://angular.io/' target='_blank'>Angular</a> & <a href='https://dotnet.microsoft.com/' target='_blank'>.Net</a>",
-    "MIT_PROTOCOL": "本專案原始碼受 <a href=\"https://github.com/twbs/bootstrap/blob/master/LICENSE\" target=\"_blank\">MIT</a> 開源協議保護"
+    "MIT_PROTOCOL": "本專案原始碼受 <a href=\"https://github.com/twbs/bootstrap/blob/master/LICENSE\" target=\"_blank\">MIT</a> 開源協議保護",
+    "TORRENTS": "种子",
+    "ALL_TORRENTS": "所有种子",
+    "MOVIE": "电影",
+    "TV_SERIAL": "电视剧",
+    "DOCUMENTARY": "纪录片",
+    "SPORTS": "体育",
+    "VARIETY": "综艺",
+    "MUSIC": "音乐",
+    "E-BOOK": "电子书",
+    "FORUMS": "论坛",
+    "UPLOAD": "上传",
+    "REQUESTS": "求种",
+    "OFFERS": "候选"
 }
