@@ -21,7 +21,6 @@ nz-header {
     height: 64px;
     background: #7dbcea;
     padding: 0 10px;
-    position: fixed;
 }
 
 nz-footer {
@@ -48,17 +47,37 @@ nz-layout:last-child {
 }
 
 .logo {
-    display: inline-block;
-    /*margin-left: 20px;*/
+    float: left;
+}
+
+.ant-menu-class {
+    width: fit-content;
+    float: left;
+}
+.search-class {
+    float: right;
+}
+
+.ant-input {
+    height: 32px;
+    padding-left: 5px;
+}
+
+.search-class {
+    width: 250px;
+}
+
+.notify-class {
+    float: right;
+}
+
+.avatar-class {
+    float: right;
 }
 
 .logo > a > img {
     width: 56px;
     vertical-align: middle;
-}
-
-.ant-menu-class {
-    display: inline-block;
 }
 
 .ant-menu-item > a {

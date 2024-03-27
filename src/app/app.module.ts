@@ -18,6 +18,9 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzListModule } from 'ng-zorro-antd/list';
 import { NzRateModule } from 'ng-zorro-antd/rate';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzBadgeModule } from 'ng-zorro-antd/badge';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 
 /* components and pages */
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
@@ -68,6 +71,9 @@ registerLocaleData(zh);
         NzGridModule,
         NzListModule,
         NzRateModule,
+        NzInputModule,
+        NzBadgeModule,
+        NzAvatarModule,
         TranslocoRootModule,
     ],
     providers: [
