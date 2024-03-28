@@ -1,14 +1,18 @@
-import { Component, inject, OnDestroy } from '@angular/core';
+import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { TranslocoService } from "@ngneat/transloco";
 import { LangDefinition } from "@ngneat/transloco";
 import { Subscription, take } from "rxjs";
+import { initFlowbite } from 'flowbite';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnDestroy {
+export class AppComponent implements OnInit, OnDestroy {
+    ngOnInit(): void {
+        initFlowbite();
+    }
     isCollapsed = false;
     title: string = "my-first-proj";
     service = inject(TranslocoService);

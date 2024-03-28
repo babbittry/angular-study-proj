@@ -46,33 +46,15 @@ nz-layout:last-child {
     margin: 0;
 }
 
-.logo {
-    float: left;
-}
 
 .ant-menu-class {
     width: fit-content;
     float: left;
 }
-.search-class {
-    float: right;
-}
 
 .ant-input {
     height: 32px;
     padding-left: 5px;
-}
-
-.search-class {
-    width: 250px;
-}
-
-.notify-class {
-    float: right;
-}
-
-.avatar-class {
-    float: right;
 }
 
 .logo > a > img {

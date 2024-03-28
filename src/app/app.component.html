@@ -1,64 +1,67 @@
 <nz-layout>
-    <nz-header class="content-center">
-        <div class="logo">
-            <a routerLink="/">
-                <img src="assets/icons/icon-512x512.png" alt="logo" />
-            </a>
+    <nz-header class="flex justify-between">
+        <div class="header-left flex items-center">
+            <div class="logo">
+                <a routerLink="/">
+                    <img src="assets/icons/icon-512x512.png" alt="logo" />
+                </a>
+            </div>
+            <div class="ant-menu-class">
+                <ul nz-menu nzMode="horizontal" nzTheme="light">
+                    <li nz-menu-item nzSelected>
+                        <a routerLink="/">{{ 'HOME' | transloco }}</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="/forums">{{ 'FORUMS' | transloco }}</a>
+                    </li>
+                    <li  routerLink="/torrents" nz-submenu nzPlacement="bottomLeft">
+                        <span title>
+                            <span class="mx-2">{{ 'TORRENTS' | transloco }}</span>
+                            <span nz-icon nzType="caret-down" nzTheme="outline"></span>
+                        </span>
+                        <ul>
+                            <li nz-menu-item><a routerLink="/torrents">{{ 'ALL_TORRENTS' | transloco }}</a></li>
+                            <li nz-menu-item><a routerLink="/">{{ 'MOVIE' | transloco }}</a></li>
+                            <li nz-menu-item><a routerLink="/">{{ 'TV_SERIAL' | transloco }}</a></li>
+                            <li nz-menu-item><a routerLink="/">{{ 'DOCUMENTARY' | transloco }}</a></li>
+                            <li nz-menu-item><a routerLink="/">{{ 'SPORTS' | transloco }}</a></li>
+                            <li nz-menu-item><a routerLink="/">{{ 'VARIETY' | transloco }}</a></li>
+                            <li nz-menu-item><a routerLink="/">{{ 'MUSIC' | transloco }}</a></li>
+                            <li nz-menu-item><a routerLink="/">{{ 'E-BOOK' | transloco }}</a></li>
+                        </ul>
+                    </li>
+                    <li nz-menu-item class="">
+                        <a routerLink="/upload">{{ 'UPLOAD' | transloco }}</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="/upload">{{ 'OFFERS' | transloco }}</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="/requests">{{ 'REQUESTS' | transloco }}</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="/rules">{{ 'RULES' | transloco }}</a>
+                    </li>
+                    <li nz-menu-item>
+                        <a routerLink="/about">{{ 'ABOUT' | transloco }}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="ant-menu-class">
-            <ul nz-menu nzMode="horizontal" nzTheme="light">
-                <li nz-menu-item nzSelected>
-                    <a routerLink="/">{{ 'HOME' | transloco }}</a>
-                </li>
-                <li nz-menu-item>
-                    <a routerLink="/forums">{{ 'FORUMS' | transloco }}</a>
-                </li>
-                <li routerLink="/torrents" nz-submenu nzPlacement="bottomLeft" nzTitle="{{ 'TORRENTS' | transloco }}">
-                    <ul>
-                        <li nz-menu-item><a routerLink="/torrents">{{ 'ALL_TORRENTS' | transloco }}</a></li>
-                        <li nz-menu-item><a routerLink="/">{{ 'MOVIE' | transloco }}</a></li>
-                        <li nz-menu-item><a routerLink="/">{{ 'TV_SERIAL' | transloco }}</a></li>
-                        <li nz-menu-item><a routerLink="/">{{ 'DOCUMENTARY' | transloco }}</a></li>
-                        <li nz-menu-item><a routerLink="/">{{ 'SPORTS' | transloco }}</a></li>
-                        <li nz-menu-item><a routerLink="/">{{ 'VARIETY' | transloco }}</a></li>
-                        <li nz-menu-item><a routerLink="/">{{ 'MUSIC' | transloco }}</a></li>
-                        <li nz-menu-item><a routerLink="/">{{ 'E-BOOK' | transloco }}</a></li>
-                    </ul>
-                </li>
-                <li nz-menu-item class="">
-                    <a routerLink="/upload">{{ 'UPLOAD' | transloco }}</a>
-                </li>
-                <li nz-menu-item>
-                    <a routerLink="/upload">{{ 'OFFERS' | transloco }}</a>
-                </li>
-                <li nz-menu-item>
-                    <a routerLink="/requests">{{ 'REQUESTS' | transloco }}</a>
-                </li>
-                <li nz-menu-item>
-                    <a routerLink="/rules">{{ 'RULES' | transloco }}</a>
-                </li>
-                <li nz-menu-item>
-                    <a routerLink="/about">{{ 'ABOUT' | transloco }}</a>
-                </li>
-            </ul>
+        <div class="header-right flex h-full items-center justify-end space-x-4">
+                <div class="notify-class flex h-full items-center justify-end">
+                    <nz-badge [nzCount]="5" nzSize="small" [nzOffset]="[0, 5]">
+                        <div class="flex flex-col">
+                            <span nz-icon nzType="mail" nzTheme="outline" class="text-lg"></span>
+                            <span class="text-sm">{{ 'NOTIFICATIONS' | transloco }}</span>
+                        </div>
+                    </nz-badge>
+                </div>
+                <div class="avatar-class">
+                    <nz-avatar nzIcon="user" nzSrc="https://app.getgrass.io/_next/image?url=%2Fimages%2Favatars%2F9.png&w=3840&q=75"></nz-avatar>
+                </div>
         </div>
-        <div class="search-class">
-            <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
-                <input type="text" nz-input placeholder="input search text" />
-            </nz-input-group>
-            <ng-template #suffixIconButton>
-                <button nz-button nzType="primary" nzSearch><span nz-icon nzType="search"></span></button>
-            </ng-template>
-        </div>
-        <div class="notify-class">
-            <nz-badge [nzCount]="5">
-                <span nz-icon nzType="bell" nzTheme="outline"></span>
-            </nz-badge>
-        </div>
-        <div class="avatar-class">
-            <nz-avatar nzIcon="user" nzSrc="https://app.getgrass.io/_next/image?url=%2Fimages%2Favatars%2F9.png&w=3840&q=75"></nz-avatar>
-        </div>
-        </nz-header>
+    </nz-header>
     <nz-content>
         <router-outlet></router-outlet>
     </nz-content>

@@ -29,6 +29,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BbcodeEditorComponent } from './components/bbcode-editor/bbcode-editor.component';
 import { NewMovieListngComponent } from './components/new-movie-listng/new-movie-listng.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 /** i18n **/
 import { registerLocaleData } from '@angular/common';
@@ -47,6 +48,7 @@ registerLocaleData(zh);
         PageNotFoundComponent,
         BbcodeEditorComponent,
         NewMovieListngComponent,
+        SearchBoxComponent,
     ],
     imports: [
         BrowserModule,
