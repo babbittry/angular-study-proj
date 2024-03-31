@@ -14,9 +14,9 @@
                     <li nz-menu-item>
                         <a routerLink="/forums">{{ 'FORUMS' | transloco }}</a>
                     </li>
-                    <li  routerLink="/torrents" nz-submenu nzPlacement="bottomLeft">
+                    <li  routerLink="/torrents" nz-submenu nzPlacement="bottomLeft" class="flex space-x-2">
                         <span title>
-                            <span class="mx-2">{{ 'TORRENTS' | transloco }}</span>
+                            <span class="mr-20">{{ 'TORRENTS' | transloco }}</span>
                             <span nz-icon nzType="caret-down" nzTheme="outline"></span>
                         </span>
                         <ul>
@@ -51,8 +51,8 @@
         <div class="header-right flex h-full items-center justify-end space-x-4">
                 <div class="notify-class flex h-full items-center justify-end">
                     <nz-badge [nzCount]="5" nzSize="small" [nzOffset]="[0, 5]">
-                        <div class="flex flex-col">
-                            <span nz-icon nzType="mail" nzTheme="outline" class="text-lg"></span>
+                        <div class="flex flex-col relative">
+                            <span nz-icon nzType="mail" nzTheme="outline" class="animate-custom-bounce text-lg"></span>
                             <span class="text-sm">{{ 'NOTIFICATIONS' | transloco }}</span>
                         </div>
                     </nz-badge>
@@ -128,4 +128,4 @@
         </div>
     </nz-footer>
 </nz-layout>
-<nz-back-top [nzVisibilityHeight]="100" /> <!-- back to top -->
+<nz-back-top [nzVisibilityHeight]="100" class="z-50"/> <!-- back to top -->

@@ -28,9 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## 所有的 z-index
 
-nz-header, nz-footer: z-index: 50
-
-ant-back-top: z-index: 100
+ant-back-top: z-index: 50
 
 .torrent-imdb-info: z-index: 2
 

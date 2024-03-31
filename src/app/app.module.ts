@@ -21,6 +21,7 @@ import { NzRateModule } from 'ng-zorro-antd/rate';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzBadgeModule } from 'ng-zorro-antd/badge';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzSelectModule } from 'ng-zorro-antd/select';
 
 /* components and pages */
 import { ChatBoxComponent } from './components/chat-box/chat-box.component';
@@ -76,6 +77,7 @@ registerLocaleData(zh);
         NzInputModule,
         NzBadgeModule,
         NzAvatarModule,
+        NzSelectModule,
         TranslocoRootModule,
     ],
     providers: [

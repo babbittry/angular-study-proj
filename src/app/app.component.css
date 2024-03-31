@@ -6,11 +6,6 @@
 nz-header,
 nz-footer {
     width: 100%;
-    z-index: 50;
-}
-
-:host ::ng-deep .ant-back-top {
-    z-index: 100;
 }
 
 :host ::ng-deep .ant-back-top .ant-back-top-content {
@@ -60,14 +55,6 @@ nz-layout:last-child {
 .logo > a > img {
     width: 56px;
     vertical-align: middle;
-}
-
-.ant-menu-item > a {
-    /*margin: 20px 0 20px 0;*/
-}
-
-.ant-menu-item > a:hover {
-    /*font-size: larger;*/
 }
 
 .info-item {
@@ -121,6 +108,10 @@ nz-footer .footer-wrapper ul li {
     animation: icon-animate 1.33s ease-in-out infinite;
 }
 
+.animate-custom-bounce:hover {
+    animation: bounce 0.3s ease-in-out;
+}
+
 @keyframes icon-animate {
     0%, 100% {
         transform: scale(1);
@@ -136,5 +127,15 @@ nz-footer .footer-wrapper ul li {
 
     50%, 70% {
         transform: scale(1.1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.5rem);
     }
 }
