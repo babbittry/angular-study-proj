@@ -108,7 +108,13 @@ nz-footer .footer-wrapper ul li {
     animation: icon-animate 1.33s ease-in-out infinite;
 }
 
-.animate-custom-bounce:hover {
+.hover-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hover-container:hover .icon-class {
     animation: bounce 0.3s ease-in-out;
 }
 
