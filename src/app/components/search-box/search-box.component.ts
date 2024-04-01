@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -7,5 +7,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './search-box.component.css'
 })
 export class SearchBoxComponent {
-
+    public person:string = "lucy";
+    compareFn = (o1: any, o2: any): boolean => (o1 && o2 ? o1.value === o2.value : o1 === o2);
 }

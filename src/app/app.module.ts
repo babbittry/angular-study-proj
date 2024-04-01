@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 /* ng zorro */
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
@@ -52,6 +53,7 @@ registerLocaleData(zh);
         SearchBoxComponent,
     ],
     imports: [
+        FormsModule,
         BrowserModule,
         AppRoutingModule,
         CommonModule,
