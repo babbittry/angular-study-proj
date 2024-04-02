@@ -2,7 +2,6 @@ import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { TranslocoService } from "@ngneat/transloco";
 import { LangDefinition } from "@ngneat/transloco";
 import { Subscription, take } from "rxjs";
-import { initFlowbite } from 'flowbite';
 
 @Component({
     selector: 'app-root',
@@ -11,7 +10,6 @@ import { initFlowbite } from 'flowbite';
 })
 export class AppComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
-        initFlowbite();
     }
     isCollapsed = false;
     title: string = "my-first-proj";
