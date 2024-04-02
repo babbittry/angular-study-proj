@@ -36,22 +36,6 @@ nz-layout:last-child {
     margin: 0;
 }
 
-
-.ant-menu-class {
-    width: fit-content;
-    float: left;
-}
-
-.ant-input {
-    height: 32px;
-    padding-left: 5px;
-}
-
-.logo > a > img {
-    width: 56px;
-    vertical-align: middle;
-}
-
 .info-item {
     /*color: #aaa;*/
     margin: 0;

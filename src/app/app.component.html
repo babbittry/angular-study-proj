@@ -1,13 +1,13 @@
 <nz-layout>
     <nz-header class="flex justify-between">
         <div class="header-left flex items-center">
-            <div class="logo">
+            <div class="logo w-14">
                 <a routerLink="/">
                     <img src="assets/icons/icon-512x512.png" alt="logo" />
                 </a>
             </div>
             <div class="ant-menu-class">
-                <ul nz-menu nzMode="horizontal" nzTheme="light">
+                <ul nz-menu nzMode="horizontal" nzTheme="light" class="flex flex-nowrap items-stretch justify-start ">
                     <li nz-menu-item nzSelected>
                         <a routerLink="/">{{ 'HOME' | transloco }}</a>
                     </li>
@@ -48,15 +48,15 @@
                 </ul>
             </div>
         </div>
-        <div class="flex items-center justify-center w-auto">
-            <app-search-box></app-search-box>
+        <div class="flex items-center justify-center max-w-lg w-full min-w-44">
+            <app-search-box class="max-w-sm w-full"></app-search-box>
         </div>
         <div class="header-right flex h-full items-center justify-end space-x-4">
                 <div class="notify-class flex h-full items-center justify-end hover-container">
                     <nz-badge [nzCount]="5" nzSize="small" [nzOffset]="[0, 5]">
                         <div class="flex flex-col relative">
                             <span nz-icon nzType="mail" nzTheme="outline" class="animate-custom-bounce text-lg icon-class"></span>
-                            <span class="text-sm">{{ 'NOTIFICATIONS' | transloco }}</span>
+                            <span class="text-sm hidden xl:block">{{ 'NOTIFICATIONS' | transloco }}</span>
                         </div>
                     </nz-badge>
                 </div>
