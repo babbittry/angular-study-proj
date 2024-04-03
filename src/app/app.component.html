@@ -1,12 +1,12 @@
 <nz-layout>
-    <nz-header class="flex justify-between">
+    <nz-header class="px-2 py-0 w-full h-16 flex justify-between bg-blue-200 dark:bg-gray-900 dark:text-white"> <!-- h-16: 4rem; /* 64px */ -->
         <div class="header-left flex items-center">
-            <div class="logo w-14">
+            <div class="logo w-14"> <!-- w-14: 3.5rem; /* 56px */ -->
                 <a routerLink="/">
                     <img src="assets/icons/icon-512x512.png" alt="logo" />
                 </a>
             </div>
-            <div class="ant-menu-class">
+            <div>
                 <ul nz-menu nzMode="horizontal" nzTheme="light" class="flex flex-nowrap items-stretch justify-start ">
                     <li nz-menu-item nzSelected>
                         <a routerLink="/">{{ 'HOME' | transloco }}</a>
@@ -48,11 +48,12 @@
                 </ul>
             </div>
         </div>
-        <div class="flex items-center justify-center max-w-lg w-full min-w-44">
+        <div class="flex items-center justify-center max-w-sm w-full min-w-44">
             <app-search-box class="max-w-sm w-full"></app-search-box>
         </div>
         <div class="header-right flex h-full items-center justify-end space-x-4">
                 <div class="notify-class flex h-full items-center justify-end hover-container">
+                    <button (click)="toggleDarkMode()">切换夜间模式</button>
                     <nz-badge [nzCount]="5" nzSize="small" [nzOffset]="[0, 5]">
                         <div class="flex flex-col relative">
                             <span nz-icon nzType="mail" nzTheme="outline" class="animate-custom-bounce text-lg icon-class"></span>

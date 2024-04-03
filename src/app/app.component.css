@@ -1,16 +1,9 @@
-nz-header,
 nz-footer {
     width: 100%;
 }
 
 :host ::ng-deep .ant-back-top .ant-back-top-content {
     background-color: #ff8d05;
-}
-
-nz-header {
-    height: 64px;
-    background: #7dbcea;
-    padding: 0 10px;
 }
 
 nz-footer {
